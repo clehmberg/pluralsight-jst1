@@ -1,6 +1,12 @@
-var answer = prompt("What is the capital of New York?");
-if(answer === "Albany"){
-  alert("You are correct!");
-}else {
-  alert("Sorry, " + answer + " is not correct.");
+var randomNumber = Math.round( Math.random() * 5 );
+
+
+
+if(randomNumber%3 === 0){
+  alert("Fizz");
+}else if(randomNumber%5 === 0){
+  alert("Buzz");
+}
+else {
+  console.log(randomNumber);
 }
