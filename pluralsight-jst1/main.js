@@ -1,3 +1,10 @@
-alert("Hello World!");
-confirm("I love JavaScript");
-prompt("Do you want to learn JavaScript");
+
+
+
+
+
+
+
+console.log("hello world");
+console.warn("Warning");
+console.error("error");
