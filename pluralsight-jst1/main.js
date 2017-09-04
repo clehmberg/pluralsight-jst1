@@ -1,26 +1,12 @@
-//var randomNumber = Math.round( Math.random() * 5 );
-var randomNumber = 15;
+alert("It is the zombie apocalypse. You are looting a store and suddenly a zombie bursts through the door!");
+var weapon = prompt(":You search around frantically for a weapon. What do you choose? A bow and arrow, an axe or a rubber chicken");
+var randomNumber = Math.round(Math.random());
 
+alert("You attack the zombie with your " + weapon);
 
-if(randomNumber%3 === 0 && randomNumber != 0){
-  alert("Fizz");
-}else if(randomNumber%5 === 0 && randomNumber != 0){
-  alert("Buzz");
-}
-else if(randomNumber%3 === 0 && randomNumber%5 === 0){
-  alert ("Fizz Buzz");
-}
+if (randomNumber === 0 ){
+  alert("The zombie bites you. You lose!!!");
+}else if (randomNumber === 1 ) {
+  alert("You  kill the zombie with your " + weapon + " You win!!!");
 
-if(randomNumber%3 === 0 && randomNumber != 0){
-  if(randomNumber%5 === 0){
-    alert("Fizz Buzz");
-
-  }
-  else{
-    alert(Fizz);
-  }
-}
-else if  (randomNumber%5 === 0 && randomNumber != 0);
-else {
-  console.log(randomNumber);
 }
