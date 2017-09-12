@@ -1,18 +1,9 @@
 
-var mark = {
-name: "Mark",
-tshirtColor: "navy blue"
-};
-var lisa = {
-  name: "Lisa",
-  tshirtColor: "red"
-};
-function Friend(name,tshirtColor){
-this.name = name;
-this.tshirtColor = tshirtColor;
-
+//global scope
+var example = "value";
+//global scope
+function alertexample(){
+   alert(example);
+   var example = "?";
 }
-var denny = new Friend("Denny", "green");
-
-alert(denny.name);
-alert(denny.tshirtColor);
+alertexample();
