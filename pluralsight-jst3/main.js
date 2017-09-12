@@ -1,9 +1,15 @@
+var three = "3";
 
-//global scope
-var example = "value";
-//global scope
-function alertexample(){
-   alert(example);
-   var example = "?";
+function alertNumber() {
+  var one = "1";
+  alert(one);
+function alertAnotherNumber(){
+  var two = "2";
+alert(two);
+alert(three);
+alert(one);
 }
-alertexample();
+alertAnotherNumber();
+alert(two);
+}
+alertNumber();
