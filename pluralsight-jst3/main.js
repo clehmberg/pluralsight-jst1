@@ -20,7 +20,6 @@ function randomNumber(range){
 console.log(tool);
 alert("You found a " + tool + ",  that should be very useful.");
   alert("Since you found a " + tool + " I suggest you...");
-//var action1 =
 switch(tool) {
   case "machete":
   alert("Cut some palm leaves and build a shelter.");
@@ -38,45 +37,45 @@ switch(tool) {
   alert("Wait, a rubber chicken?! Oh my god you are sooo screwed!");
 }
 var action1 = tool;
-  if(character.class === "s"){
+  if(character.class === "s") {
     character.s = 5;
-}if(character.class === "d"){
+  }if(character.class === "d") {
     character.w = 5;
-}if(character.class === "i"){
+  }if(character.class === "i") {
     character.h = 5;
   }if(action1 === "machete") {
-  if(character.s === 5 || character.w === 5){
-    alert("Being a " + character.class + " sure came in handy, you built a fine shelter and made it through the night.");
-    outcome = "next";
-  }else if(character.s  < 5 || character.w < 5) {
-    alert("Don't you wish you had spent more time being a 'Real Man' and learned how to build a decent shelter? You got hypothermia and died");
-    outcome = "lose";
-  }
-}if(action1 === "fire starter"){
-  if(character.s === 5){
+    if(character.s === 5 || character.w === 5) {
+      alert("That machete came in pretty handy. You built a sturdy shelter that kept you warm all night.");
+      outcome = "next";
+    }if(character.h < 5) {
+        alert("You should have spent more time in the gym, I've never seen anyone so weak they couldn't chop stuff with a machete. Since you didn't get a shelter built you got hypothermia and died.");
+        outcome = "lose";
+      }
+    }if(action1 === "fire starter") {
+      if(character.s === 5) {
     alert("Wow, it took you a while but you finally got the hang of that fire starter. Your fire kept you warm all night.");
-    outcome = "next";
-  }else if(character.s < 5){
-    alert("You just didn't have it in you to get that fire going did you? Thats to bad, because you got hypothermia and died");
-    outcome = "lose";
+      outcome = "next";
+      }else if(character.s < 5) {
+        alert("You just didn't have it in you to get that fire started did you? Don't you wish you had spent more time outside learning to be a real man?");
+        outcome = "lose";
     }
-  }if(action1 === "parachord"){
-    if(character.w === 5){
+  }if(action1 === "parachord") {
+    if(character.w === 5) {
       alert("Holy cow! You used the parachord to make a shelter out of dried seaweed? It's a good thing you didn't take my advice or you would have gotten hypothermia and died.");
       outcome = "next";
-    }else if(character.w < 5){
+    }else if(character.w < 5) {
       alert("I can't believe you actually made a snare with the parachord! you didn't even have any bait! That's to bad, because you got hypothermia and died.");
       outcome = "lose";
     }
-  }if(action1 === "ouija board"){
-    if(character.w === 5){
+  }if(action1 === "ouija board") {
+    if(character.w === 5) {
       alert("You used the ouija board to cover yourself with sand to keep warm? That's good because I didn't think the whole summon spirits thing would work anyway.");
       outcome = "next";
     }else if(character.w < 5) {
-      alert("Really?! You actually thought summoning spirits would work? Everyone know it gets cold when they're around. You should have been more creative because you got hypothermia and died.");
+      alert("Really?! You actually thought summoning spirits would work? Everyone knows it gets cold when they're around. You should have been more creative because you got hypothermia and died.");
       outcome = "lose";
     }
-  }if(action1 === "rubber chicken"){
+  }if(action1 === "rubber chicken") {
     if(character.w < 5 || character.s < 5 || character.h < 5){
       alert("Ha ha ha, a rubber chicken! Oh my god! You should have searched a lot harder. Ha ha ha, I sure hope you weren't expecting to win, because if you did your dumber than I thought. ");
       outcome = "lose";
@@ -84,6 +83,7 @@ var action1 = tool;
   }if(outcome === "next") {
     alert("If you keep this up you just might survive!");
   }var next = prompt("What do you want to do next? Search the island (island), search for food? (food) or scale the nearby cliff to see what you can see.(cliff)");
+
     if(next === "island") {
     alert("You begin searching the island");
     var action2 = prompt("You stumble upon a tribe of cannibals during a religious ceremony. They see you, what do you do? Try to out run them?(r) Suck in your gut and try not to look tastey.(s)");
@@ -114,7 +114,7 @@ var action1 = tool;
     }
   }else if(next === "cliff") {
   var action3 = prompt("You begin to walk toward the cliff, what do you do next? Tuck your tail between your legs and look for an easier way to the top.(top) Pound your chest like Tarzan and begin to scale the cliff wall.(scale)");
-  if(action3 === "top") {
+if(action3 === "top") {
   if(character.w === 5 || character.h === 5) {
     alert("You get to the bottom of the cliff and realize that you aren't Sir Edmund Hillary and that 'because it's there' is a dumb reason to die. You start walking away and come across a well used trail with a sign that say's 'to top of cliff'. You get to the top of the cliff and discover a five star resort with an open bar! You live happily ever after...Waisted 24/7...but happy. ");
     outcome = "win";
