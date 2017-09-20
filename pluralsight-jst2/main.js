@@ -2,7 +2,7 @@ confirm("Do you want to play my 'Garden game?'");
 if(confirm === true){
 alert("You standing in your freshly tilled garden and you have a bag of magic seeds");
 }else{
-  alert("You suck!...Good Day Sir!.");
+  alert("You lose!...Good Day Sir!.");
   alert("I SAID GOOD DAY!");
   throw error;
 }var plant =prompt("do you want me to choose which seeds to plant? Yes or no.");

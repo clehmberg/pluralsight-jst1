@@ -1,0 +1,47 @@
+h1 {
+	color: #ffffff;
+	font-size: 100px;
+	font-family: Bradley Hand ITC;
+	text-decoration: underline;
+	text-shadow: 4px 6px #000000;
+
+}
+h2{
+	color: #ffffff;
+	margin-left: 5%;
+	text-shadow: 2px 2px #000000;
+}
+.ul1 {
+	font-weight: bolder;
+	font-size: 22px;
+	 margin-left: 5%;
+	 text-shadow: 2px 2px #000000;
+}
+.ul2 {
+	font-weight: bolder;
+	font-size: 22px;
+	margin-left: 5%;
+	text-shadow: 2px 2px #000000;
+}
+body{
+	font-family: Bradley Hand ITC;
+	margin-left: .5%;
+	align-items: center;
+	background-image: url(https://m.popkey.co/a6397f/4MJO8.gif);
+	background-position: center;
+	color: #ffffff;
+	background-size: cover;
+}
+ol {
+	font-weight: bolder;
+	font-size: 22px;
+	margin-left: 5%;
+	text-shadow: 2px 2px #000000;
+}
+p {
+	margin-left: 5%;
+}
+h3{
+	margin-left: 5%;
+	text-shadow: 2px 2px #000000;
+}
